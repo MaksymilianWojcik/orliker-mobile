@@ -57,3 +57,6 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+App/Config/index.dev.js
+App/Config/index.production.js
+App/Config/index.staging.js
