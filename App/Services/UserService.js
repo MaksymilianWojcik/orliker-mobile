@@ -15,24 +15,21 @@ const userApiClient = axios.create({
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
-  timeout: 3000,
+  timeout: 5000,
 })
 
 function fetchUser() {
-  if (Math.random() > 0.5) {
-    return new Promise(function(resolve, reject) {
-      resolve(null)
-    })
-  }
 
-  let number = Math.floor(Math.random() / 0.1) + 1
-
-  return userApiClient.get(number.toString()).then((response) => {
+  return userApiClient.get('/users').then((response) => {
+    console.log(`repsonse status: ${response.status}`)
     if (in200s(response.status)) {
+      console.log(JSON.stringify(response.data))
       return response.data
     }
-
-    return null
+    return null;
+  }).catch(err => {
+    console.log(err.response)
+    console.log(`error message: ${err.response.data.message}`)
   })
 }
 

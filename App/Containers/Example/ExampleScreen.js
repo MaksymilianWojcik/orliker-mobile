@@ -33,10 +33,10 @@ class ExampleScreen extends React.Component {
               <View>
                 <Text style={Style.result}>
                   {"I'm a fake user, my name is "}
-                  {this.props.user.name}
+                  {this.props.user[0].email}
                 </Text>
                 <Text style={Style.result}>
-                  {this.props.liveInEurope ? 'I live in Europe !' : "I don't live in Europe."}
+                  {/*this.props.liveInEurope ? 'I live in Europe !' : "I don't live in Europe."*/}
                 </Text>
               </View>
             )}
@@ -53,7 +53,7 @@ class ExampleScreen extends React.Component {
 }
 
 ExampleScreen.propTypes = {
-  user: PropTypes.object,
+  user: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   userIsLoading: PropTypes.bool,
   userErrorMessage: PropTypes.string,
   fetchUser: PropTypes.func,
@@ -64,7 +64,7 @@ const mapStateToProps = (state) => ({
   user: state.example.user,
   userIsLoading: state.example.userIsLoading,
   userErrorMessage: state.example.userErrorMessage,
-  liveInEurope: liveInEurope(state),
+  // liveInEurope: liveInEurope(state),
 })
 
 const mapDispatchToProps = (dispatch) => ({
