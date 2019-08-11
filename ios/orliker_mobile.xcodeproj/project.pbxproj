@@ -58,6 +58,7 @@
 		2D02E47B1E0B4A5D006451C7 /* orliker_mobile-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "orliker_mobile-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* orliker_mobile-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "orliker_mobile-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DDE884B55B3E566CD98B28 /* libPods-orliker_mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orliker_mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76261B0F22FF812B00781BCA /* libreact-native-config.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-config.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA51C1543BFE8F6C6112D46 /* libPods-orliker_mobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orliker_mobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96636F14181FDA9A27310F34 /* Pods-orliker_mobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orliker_mobile-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-orliker_mobile-tvOS/Pods-orliker_mobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		9F17808742EE323EF761656C /* Pods-orliker_mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orliker_mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-orliker_mobile/Pods-orliker_mobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76261B0F22FF812B00781BCA /* libreact-native-config.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				55DDE884B55B3E566CD98B28 /* libPods-orliker_mobile.a */,
